@@ -56,7 +56,7 @@ Default choices are simple and boring on purpose:
 
 If you're a VP of Marketing, VP of Operations, or a founder who needs to move fast without technical debt — we should talk.
 
-📬 [hello@bepartner.labs](mailto:hello@bepartner.labs)
+📬 [hello@bepartnerlabs.com](mailto:hello@bepartnerlabs.com)
 
 ---
 
