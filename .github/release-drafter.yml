@@ -1,0 +1,46 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+template: |
+  ## What's Changed
+
+  $CHANGES
+
+  ## Contributors
+
+  $CONTRIBUTORS
+categories:
+  - title: 'Features'
+    labels:
+      - 'feature'
+      - 'feat'
+  - title: 'Bug Fixes'
+    labels:
+      - 'fix'
+      - 'revert'
+  - title: 'Performance & Refactor'
+    labels:
+      - 'refactor'
+      - 'style'
+      - 'perf'
+  - title: 'Maintenance'
+    labels:
+      - 'build'
+      - 'chore'
+      - 'ci'
+  - title: 'Documentation & Tests'
+    labels:
+      - 'docs'
+      - 'test'
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+      - 'feat'
+  patch:
+    labels:
+      - 'patch'
+  default: patch

@@ -1,0 +1,57 @@
+version: v1
+
+labels:
+  - label: "build"
+    matcher:
+      title: "^build[:(].*"
+      branch: "build/.*"
+
+  - label: "chore"
+    matcher:
+      title: "^chore[:(].*"
+      branch: "chore/.*"
+
+  - label: "ci"
+    matcher:
+      title: "^ci[:(].*"
+      branch: "ci/.*"
+
+  - label: "docs"
+    matcher:
+      title: "^docs[:(].*"
+      branch: "docs/.*"
+
+  - label: "feat"
+    matcher:
+      title: "^feat[:(].*"
+      branch: "feat/.*"
+
+  - label: "fix"
+    matcher:
+      title: "^fix[:(].*"
+      branch: "fix/.*"
+
+  - label: "perf"
+    matcher:
+      title: "^perf[:(].*"
+      branch: "perf/.*"
+
+  - label: "refactor"
+    matcher:
+      title: "^refactor[:(].*"
+      branch: "refactor/.*"
+
+  - label: "revert"
+    matcher:
+      title: "^revert[:(].*"
+      branch: "revert/.*"
+
+  - label: "style"
+    matcher:
+      title: "^style[:(].*"
+      branch: "style/.*"
+
+  - label: "test"
+    matcher:
+      title: "^test[:(].*"
+      branch: "test/.*"
