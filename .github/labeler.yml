@@ -55,3 +55,7 @@ labels:
     matcher:
       title: "^test[:(].*"
       branch: "test/.*"
+
+  - label: "minor"
+    matcher:
+      title: "^[a-z]+![(:].*"
