@@ -32,13 +32,18 @@ categories:
     labels:
       - 'docs'
       - 'test'
+  - title: 'Other'
 version-resolver:
   major:
     labels:
       - 'major'
+      # labeler.yml auto-applies "minor" to breaking-change commits/PRs
+      # (title/branch matching `type!:` or `type!(scope):`, e.g. "feat!: ..."),
+      # not to be confused with a semver minor bump — per semver, a breaking
+      # change is a MAJOR bump.
+      - 'minor'
   minor:
     labels:
-      - 'minor'
       - 'feat'
   patch:
     labels:
