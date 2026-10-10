@@ -10,6 +10,13 @@ template: |
 
   $CONTRIBUTORS
 categories:
+  # Va primera y aparte: es lo que hay que saber antes de publicar. Un PR con
+  # esta etiqueta sale aca **y** en la categoria de su tipo —release-drafter
+  # repite el PR en cada categoria que le corresponde—. Si la seccion no
+  # aparece en el borrador, el release no lleva migracion.
+  - title: '⚠️ Database migrations'
+    labels:
+      - 'migration'
   - title: 'Features'
     labels:
       - 'feature'

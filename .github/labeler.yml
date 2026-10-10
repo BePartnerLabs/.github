@@ -59,3 +59,13 @@ labels:
   - label: "minor"
     matcher:
       title: "^[a-z]+![(:].*"
+
+  # Por archivos y no por titulo: un PR lleva migracion cuando toca la carpeta,
+  # se llame como se llame. `**/migrations/**` cubre `src/migrations` (Payload)
+  # y las de cualquier otro proyecto sin nombrarlos uno por uno. La etiqueta no
+  # mueve la version —eso lo decide el tipo del PR—: avisa en las notas del
+  # release que ese deploy toca la base y no se revierte promoviendo el
+  # anterior.
+  - label: "migration"
+    matcher:
+      files: "**/migrations/**"
