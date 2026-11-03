@@ -1,8 +1,11 @@
 name: User story
-description: Something someone wants to be able to do, with tests that say when it is finished
+description: One concrete feature of an epic, with tests that say when it is finished
 title: ""
 labels: ["story"]
 body:
+  - type: markdown
+    attributes:
+      value: Create it from its epic with **Create sub-issue**, and split it into tasks the same way.
   - type: textarea
     id: story
     attributes:
