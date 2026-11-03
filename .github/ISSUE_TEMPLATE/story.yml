@@ -1,0 +1,70 @@
+name: User story
+description: One concrete feature of an epic, with tests that say when it is finished
+title: ""
+labels: ["story"]
+body:
+  - type: markdown
+    attributes:
+      value: Create it from its epic with **Create sub-issue**, and split it into tasks the same way.
+  - type: textarea
+    id: story
+    attributes:
+      label: Story
+      description: Who, what and why, in words a business user understands. No technical terms here. If the "so that" cannot be written, it is not a story yet.
+      placeholder: As a salesperson, I want every website form to arrive in the CRM as a lead, so that I follow up from one place.
+    validations:
+      required: true
+  - type: textarea
+    id: functional
+    attributes:
+      label: Functional requirements
+      description: What it must do, one per line.
+      placeholder: |
+        - **FR-1** …
+    validations:
+      required: true
+  - type: textarea
+    id: non-functional
+    attributes:
+      label: Non-functional requirements
+      description: Security, reliability, performance, auditability… Leave empty if none.
+      placeholder: |
+        - **NFR-1** …
+  - type: textarea
+    id: technical
+    attributes:
+      label: Technical criteria
+      description: The only section for technical terms — modules, models, endpoints, infrastructure, constraints on the how.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance tests
+      description: Agreed before building and automated (TDD). One per line, as Given / When / Then. Each one has to be checkable.
+      placeholder: |
+        - **AT-1** **Given** …, **when** …, **then** …
+    validations:
+      required: true
+  - type: checkboxes
+    id: dor
+    attributes:
+      label: Definition of Ready
+      options:
+        - label: The story, requirements and acceptance tests are agreed with the business owner.
+        - label: The current (AS-IS) flow is drawn.
+        - label: The inputs needed from the client are listed in Notes, or there are none.
+        - label: It is split into sub-issues (tasks), each small enough for one PR or one commit.
+  - type: checkboxes
+    id: dod
+    attributes:
+      label: Definition of Done
+      options:
+        - label: Every sub-issue (task) is closed.
+        - label: Every acceptance test is automated and passing, and the PR says how it was checked.
+        - label: The new (TO-BE) flow diagram is updated.
+        - label: Anything a user or operator needs to know is documented.
+        - label: The PR that closes the last task also says "Closes #N" for this story, so it moves to Released.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Inputs needed from the client, blockers, references.

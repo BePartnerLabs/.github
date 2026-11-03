@@ -1,0 +1,28 @@
+name: Task
+description: An atomic, testable piece of a user story, done in one PR or one semantic commit
+title: ""
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: Create it from the story with **Create sub-issue**, so it shows up under its parent and counts towards its progress.
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: The one change this task makes. If it needs "and", it is probably two tasks.
+    validations:
+      required: true
+  - type: input
+    id: covers
+    attributes:
+      label: Covers
+      description: Which requirements and acceptance tests of the story this task delivers.
+      placeholder: FR-2, AT-3
+  - type: textarea
+    id: verification
+    attributes:
+      label: How to check it
+      description: The automated test that proves it. A task without a test is not atomic enough yet.
+    validations:
+      required: true
