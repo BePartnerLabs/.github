@@ -1,5 +1,5 @@
 name: Task
-description: A small piece of a user story, done in one PR or one semantic commit
+description: An atomic, testable piece of a user story, done in one PR or one semantic commit
 title: ""
 labels: ["task"]
 body:
@@ -23,6 +23,6 @@ body:
     id: verification
     attributes:
       label: How to check it
-      description: The test that proves it, or how to try it by hand.
+      description: The automated test that proves it. A task without a test is not atomic enough yet.
     validations:
       required: true
