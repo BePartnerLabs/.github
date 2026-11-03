@@ -1,0 +1,39 @@
+name: Epic
+description: A business domain to deliver, split into user stories; it can span several releases
+title: "[Epic] "
+labels: ["epic"]
+body:
+  - type: markdown
+    attributes:
+      value: An epic is not built directly. Its work lives in user stories, created from here with **Create sub-issue**.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What the business gets when the whole domain is done, in words a business user understands. No technical terms here.
+      placeholder: As Amerikiosks, I want every lead from the website and social media in one CRM, so that no sale is lost between tools.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is in and what is explicitly out. Each item in will become one or more stories.
+      placeholder: |
+        **In**
+        - …
+
+        **Out**
+        - …
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: How we know it worked
+      description: The business result to look at once it is in use, e.g. "no form lands in Monday any more".
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Inputs needed from the client, blockers, dependencies on other epics, references.
